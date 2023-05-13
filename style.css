@@ -1,0 +1,18 @@
+@font-face {
+  font-family: "CrimsonText";
+  src: url(fonts/Crimson_Text/CrimsonText-Regular.ttf) format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "CrimsonText";
+  src: url(fonts/Crimson_Text/CrimsonText-Bold.ttf) format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: "BarlowCondensed";
+  src: url(fonts/Barlow_Condensed/BarlowCondensed-Black.ttf) format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}

@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Island Media Management Developer Test Phase 2</title>
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {},
+          fontFamily: {
+            barlow: ["BarlowCondensed", "sans-serif"],
+            crimson: ["CrimsonText", "sans"],
+          },
+        },
+      };
+    </script>
+    <style type="text/tailwindcss">
+      @layer base {
+        @font-face {
+          font-family: "CrimsonText";
+          src: url(fonts/Crimson_Text/CrimsonText-Regular.ttf)
+            format("truetype");
+          font-weight: normal;
+          font-style: normal;
+        }
+        @font-face {
+          font-family: "CrimsonText";
+          src: url(fonts/Crimson_Text/CrimsonText-Bold.ttf) format("truetype");
+          font-weight: bold;
+          font-style: normal;
+        }
+        @font-face {
+          font-family: "BarlowCondensed";
+          src: url(fonts/Barlow_Condensed/BarlowCondensed-Regular.ttf)
+            format("truetype");
+          font-weight: normal;
+          font-style: normal;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <section class="container mx-auto">
+      <header id="nav-on-top" class="fixed top-0 left-0 right-0 py-2 mx-auto z-50">
+        <nav class="flex justify-between items-center w-[80%] mx-auto">
+          <img
+            src="assets/icons/logo.svg"
+            alt="logo"
+            class="w-[100px] h-[100px]"
+          />
+          <ul class="flex gap-8 font-barlow text-white text-xl">
+            <li>ABOUT</li>
+            <li>MENU</li>
+            <li>MOODS</li>
+            <li>BLOG</li>
+            <li>CONTACT</li>
+            <li>SEARCH</li>
+          </ul>
+        </nav>
+      </header>
+      <main class="content">
+        <section class="relative">
+            <h1 class="text-white font-crimson text-7xl absolute left-0 right-0 top-28 text-center">Life Begins After Coffe.</h1>
+          <img src="assets/Header Image.jpg" alt="" class="object-cover object-center h-[100vh] w-full"/>
+          <button
+            class="text-2xl text-white text-center font-barlow bg-[#F1C36D] px-12 py-2 absolute left-0 right-0 bottom-16 w-fit mx-auto"
+            onclick="smoothScroll(document.getElementById('menu'))"
+          >
+            VIEW MENU
+          </button>
+          
+        </section>
+        <section
+        id="menu"
+          class=" flex flex-col items-center justify-center text-center mt-24 mb-32"
+        >
+          <h1 class="font-crimson text-5xl">What would you like to have ?</h1>
+          <p class="font-barlow w-[712px] text-xl mt-8">
+            Coffe plunger pot sweet barista, grounds acerbic coffe instant crema
+            cream in half and half. Spoon lungo variety as siphon, risetto, iced
+            brewed and acerbic affogato grinder.
+          </p>
+          <div class="image-container flex gap-4 mt-16">
+            <div class="relative bg-blue-400">
+                <img
+                  src="assets/Gallery 1.jpg"
+                  alt="img-1"
+                  class="object-none object-right w-[280px] h-[558px]"
+                />
+                <div class="font-barlow text-3xl font-bold text-white absolute top-[50%] bottom-[50%] left-0 right-0">COFFE</div>
+            </div>
+            <div class="relative bg-blue-400">
+                <img
+                  src="assets/Gallery 3.jpg"
+                  alt="img-1"
+                  class="object-none object-right w-[280px] h-[558px]"
+                />
+                <div class="font-barlow text-3xl font-bold text-white absolute top-[50%] bottom-[50%] left-0 right-0">BREAKFAST</div>
+            </div>
+            <div class="relative bg-blue-400">
+                <img
+                  src="assets/Gallery 4.jpg"
+                  alt="img-1"
+                  class="object-none object-right w-[280px] h-[558px]"
+                />
+                <div class="font-barlow text-3xl font-bold text-white absolute top-[50%] bottom-[50%] left-0 right-0">SANDWICH</div>
+            </div>
+            <div class="relative bg-blue-400">
+                <img
+                  src="assets/Gallery 2.jpg"
+                  alt="img-1"
+                  class="object-none object-right w-[280px] h-[558px]"
+                />
+                <div class="font-barlow text-3xl font-bold text-white absolute top-[50%] bottom-[50%] left-0 right-0">JUICE</div>
+            </div>
+
+
+          </div>
+
+          <h1 class="font-crimson text-5xl mt-36">
+            Extraction instant that variety white robusta strong
+          </h1>
+          <p class="font-barlow w-[762px] text-xl mt-8">
+            Coffee plunger pot sweet barista, grounds acerbic coffee instant
+            crema cream in half and half. Spoon lungo variety, as, siphon,
+            ristretto, iced brewed and acerbic affogato grinder. Mazagran café
+            au lait wings spoon, percolator milk latte dark strong. Whipped,
+            filter latte, filter aromatic grounds doppio caramelization half and
+            half.
+          </p>
+
+          <button
+            class="text-2xl text-white text-center font-barlow bg-[#F1C36D] px-12 py-2 mt-14"
+          >
+            CONTACT US
+          </button>
+        </section>
+        <section class="flex flex-col items-center justify-center bg-[#F1F1F1] p-32">
+          <h1 class="font-crimson text-5xl">Health Benefits of Coffee</h1>
+
+          <div class="flex p-8 gap-48 mt-16">
+            <div class="flex flex-col justify-center">
+              <img
+                src="assets/icons/battery-full.svg"
+                alt="battrey-icon"
+                class="h-20 w-20 object-contain self-center"
+              />
+              <p class="mt-6 font-barlow text-xl text-center">BOOST ENERGY LEVEL</p>
+            </div>
+            <div class="flex flex-col justify-center">
+              <img
+                src="assets/icons/sun.svg"
+                alt="battrey-icon"
+                class="h-20 w-20 object-contain self-center"
+              />
+              <p class="mt-6 font-barlow text-xl text-center">REDUCE DEPRESSION</p>
+            </div>
+            <div class="flex flex-col justify-center">
+              <img
+                src="assets/icons/weight.svg"
+                alt="battrey-icon"
+                class="h-20 w-20 object-contain self-center"
+              />
+              <p class="mt-6 font-barlow text-xl text-center">AID IN WEIGHT LOSS</p>
+            </div>
+        </section>
+        <section class="flex items-center justify-center p-32 gap-20" >
+            <img src="assets/blog 1.jpg" alt="" class="object-contain w-[474px] h-[558px]">
+            <div class="w-[440px] self-start flex-col flex gap-4">
+                <p class="font-barlow text-xl">BLOG</p>
+                <h1 class="font-crimson text-5xl">Qui espresso, grounds to go</h1>
+                <p class="font-barlow">December 12, 2019 | Espresso</p>
+                <p class="font-crimson">Skinny caffeine aged variety filter saucer redeye, sugar
+                    sit steamed eu extraction organic. Beans, crema half
+                    and half fair trade carajillo in a variety dripper doppio
+                    pumpkin spice cup lungo, doppio, est trifecta breve and,
+                    rich, extraction robusta a eu instant. Body sugar
+                    steamed, aftertaste, decaffeinated coffee fair trade sit,
+                    white shop fair trade galão, dark crema breve
+                    frappuccino iced strong siphon trifecta in a at viennese.
+                </p>
+                <button class="font-barlow self-start text-xl font-bold">READ MORE </button>
+            </div>
+        </section>
+      </main>
+      <footer class="bg-[#2E2E2E] py-12 font-barlow text-white text-xl">
+        <div class="justify-center gap-20 flex mx-auto m-auto items-center">  
+            <img
+                src="assets/icons/logo.svg"
+                alt="logo"
+                class="w-[100px] h-[100px]"
+              />
+              <div class="self-start">
+                <p>2800 S White Mountain Rd | Show Low AZ 85901</p>
+                <p>(928) 537-1425 | info@grinder-coffee.com</p>
+                <div class="text-sm flex gap-8">
+                    <p>Instagram</p>
+                    <p>Facebook</p>
+
+                </div>
+              </div>
+              <div class="self-start">
+                <p class="font-bold">NEWSLETTER</p>
+                <div class="border border-white">
+                    <input type="text" class="appearance-none bg-[#2E2E2E] focus:outline-0 px-2 placeholder:text-white" placeholder="YOUR EMAIL ADDRESS">
+                    <button class="text-white text-center font-barlow bg-[#F1C36D] px-6">
+                        SUBSCRIBE
+                    </button>
+                </div>
+              </div>
+        </div>
+      </footer>
+    </section>
+
+    <script>
+      const navbar = document.getElementById("nav-on-top");
+      window.onscroll = () => {
+        if (window.pageYOffset > 0) {
+          navbar.classList.add("bg-gray-900");
+          navbar.classList.add("bg-opacity-60");
+        } else {
+          navbar.classList.remove("bg-gray-900");
+          navbar.classList.add("bg-opacity-60");
+        }
+      };
+
+      window.smoothScroll = function(target) {
+    var scrollContainer = target;
+    do { //find scroll container
+        scrollContainer = scrollContainer.parentNode;
+        if (!scrollContainer) return;
+        scrollContainer.scrollTop += 1;
+    } while (scrollContainer.scrollTop == 0);
+
+    var targetY = 0;
+    do { //find the top of target relatively to the container
+        if (target == scrollContainer) break;
+        targetY += target.offsetTop;
+    } while (target = target.offsetParent);
+
+    scroll = function(c, a, b, i) {
+        i++; if (i > 30) return;
+        c.scrollTop = a + (b - a) / 30 * i;
+        setTimeout(function(){ scroll(c, a, b, i); }, 20);
+    }
+    // start scrolling
+    scroll(scrollContainer, scrollContainer.scrollTop, targetY, 0);
+}
+    </script>
+  </body>
+</html>
